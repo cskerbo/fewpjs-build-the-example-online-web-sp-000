@@ -5,7 +5,7 @@ const FULL_HEART = '♥'
 function likePost
 
 document.addEventListener("DOMContentLoaded", () => {
-
+let likeLi = document.querySelector('.like')
 })
 
 
