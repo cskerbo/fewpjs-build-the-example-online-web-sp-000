@@ -7,7 +7,7 @@ const FULL_HEART = '♥'
 document.addEventListener("DOMContentLoaded", () => {
   let likeLi = document.querySelectorAll('li.like')
   for (const like of likeLi) {
-  likeLi.addEventListener('click', event => {
+  like.addEventListener('click', event => {
     console.log(event.target.lastChild)
     updateHeart(event.target.lastChild)
   })
