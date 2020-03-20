@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let likeLi = document.querySelector('.like')
   likeLi.addEventListener('click', event => {
     console.log(event.target.lastChild)
+    updateHeart(event.target.lastChild)
   })
 })
 
