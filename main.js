@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+function updateHeart (target){
+  target.addClass('activated-heart')
+}
+
 
 
 //------------------------------------------------------------------------------
