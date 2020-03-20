@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let likeLi = document.querySelectorAll('li.like')
   for (const like of likeLi) {
   like.addEventListener('click', event => {
+    mimicServerCall()
     console.log(event.target.lastChild)
     updateHeart(event.target.lastChild)
   })
@@ -20,9 +21,9 @@ function updateHeart (target){
     target.innerHTML = EMPTY_HEART
   }
   else {
-  target.classList.add('activated-heart')
-  target.innerHTML = FULL_HEART
-}
+    target.classList.add('activated-heart')
+    target.innerHTML = FULL_HEART
+  }
 }
 
 
