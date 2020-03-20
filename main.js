@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function updateHeart (target){
+  if target.class.contains('activated-heart')
+    target.classList.remove('activated-heart')
+    target.innerHTML = EMPTY_HEART
+  else
   target.classList.add('activated-heart')
   target.innerHTML = FULL_HEART
 }
