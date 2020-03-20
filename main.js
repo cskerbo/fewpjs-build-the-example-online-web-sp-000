@@ -2,7 +2,7 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 // Your JavaScript code goes here!
-function likePost
+
 
 document.addEventListener("DOMContentLoaded", () => {
   let likeLi = document.querySelector('.like')
