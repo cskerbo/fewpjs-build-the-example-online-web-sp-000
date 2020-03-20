@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function updateHeart (target){
   target.classList.add('activated-heart')
+  target.innerHTML = FULL_HEART
 }
 
 
