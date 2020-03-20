@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let likeLi = document.querySelectorAll('li.like')
   for (const like of likeLi) {
   like.addEventListener('click', event => {
-    mimicServerCall()
+    console.log(mimicServerCall())
     console.log(event.target.lastChild)
     updateHeart(event.target.lastChild)
   })
