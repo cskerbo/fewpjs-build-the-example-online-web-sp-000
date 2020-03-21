@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   like.addEventListener('click', event => {
     mimicServerCall()
     .then(() => {
-      modal.classList.add('hidden')
       updateHeart(event.target.lastChild)
     })
     .catch((err) => {
       console.error(err)
+      setTimeout(modal.classList.add('hidden'), 5000)
       modal.classList.remove('hidden')
     })
   })
