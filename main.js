@@ -2,11 +2,10 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 // Your JavaScript code goes here!
-
+const modal = document.querySelector('#modal')
+const likeLi = document.querySelectorAll('li.like')
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.querySelector('#modal')
-  const likeLi = document.querySelectorAll('li.like')
   for (const like of likeLi) {
   like.addEventListener('click', event => {
     mimicServerCall()
@@ -32,8 +31,6 @@ function updateHeart (target){
     target.innerHTML = FULL_HEART
   }
 }
-
-
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
