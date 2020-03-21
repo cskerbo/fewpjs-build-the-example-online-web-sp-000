@@ -5,7 +5,8 @@ const FULL_HEART = '♥'
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  let likeLi = document.querySelectorAll('li.like')
+  const modal = document.querySelector('#modal')
+  const likeLi = document.querySelectorAll('li.like')
   for (const like of likeLi) {
   like.addEventListener('click', event => {
     mimicServerCall()
