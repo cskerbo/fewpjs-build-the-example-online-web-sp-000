@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((err) => {
       console.error(err)
-      setTimeout(modal.classList.add('hidden'), 5000)
+      setTimeout(() => modal.classList.add('hidden'), 5000)
       modal.classList.remove('hidden')
     })
   })
